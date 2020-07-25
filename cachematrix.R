@@ -32,3 +32,6 @@ cacheSolve <- function(x, ...) {
   getinv <- function() inv
   list(set = set, get = get, setinv = setinv, getinv = getinv)
 }
+
+matrix <- makeCacheMatrix(matrix(c(7, 6,9,9, 9, 7), 2, 3))
+cacheSolve(matrix)
